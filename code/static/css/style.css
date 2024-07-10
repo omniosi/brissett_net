@@ -3,8 +3,94 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+}
+a[href="/services/"],
+a[href="#"]{
+  pointer-events: none;
+}
+button{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding-inline-start: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  border-radius: 0.25em;
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+:root{
+  --color-primary: #343D93;
+  --color-accent: #23C8DF;
+}
 body{
   font-family: ui-sans-serif, sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  padding-top: 6em;
+}
+body > *{
+  transition: all 1s ease-in-out;
+}
+.logo{
+  width: 160px;
+}
+ul.social{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+footer,
+nav .menu-slideout ul,
+nav button,
+nav{
+  padding: 16px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+}
+nav button.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  align-self: baseline;
+}
+nav button.menu .line{
+  width: 32px;
+  height: 2px;
+  background: black;
+}
+footer,
+nav .menu-slideout{
+  background: var(--color-primary);
+  color: white;
+}
+nav .menu-slideout{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  overflow: scroll;
+  height: 0;
+}
+nav .menu-slideout ul:first-child{
+  margin-top: 6em;
+}
+.hero:before{
+  padding: 6em;
 }
