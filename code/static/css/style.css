@@ -13,6 +13,20 @@ a[href="/services/"],
 a[href="#"]{
   pointer-events: none;
 }
+a.btn{
+  background: white;
+  color: black;
+  border: 2px solid black;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 0.5em;
+  font-weight: 700;
+  display: inline-block;
+}
+a:hover.btn{
+  /* background: var(--color-accent); */
+  background: lightgray;
+}
 button{
   background-color: white;
   border: none;
@@ -31,9 +45,11 @@ ul{
 :root{
   --color-primary: #343D93;
   --color-accent: #23C8DF;
+  --font-primary: Inter, ui-sans-serif, sans-serif;
+  --font-secondary: Molengo, ui-sans-serif, sans-serif;
 }
 body{
-  font-family: ui-sans-serif, sans-serif;
+  font-family: var(--font-primary);
   font-size: 16px;
   line-height: 1.2;
   padding-top: 6em;
@@ -49,7 +65,10 @@ ul.social{
   flex-direction: row;
   gap: 1em;
 }
+.services,
+h1,
 footer,
+.hero,
 nav .menu-slideout ul,
 nav button,
 nav{
@@ -62,6 +81,7 @@ nav{
   width: 100%;
   top: 0;
   background: white;
+  z-index: 10;
 }
 nav button.menu{
   display: flex;
@@ -91,6 +111,60 @@ nav .menu-slideout{
 nav .menu-slideout ul:first-child{
   margin-top: 6em;
 }
+h1{
+  font-size: 16px;
+  padding-bottom: 0;
+}
+h2{
+  font-family: Molengo, ui-sans-serif, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
 .hero:before{
-  padding: 6em;
+  margin-top: 6em;
+}
+.hero{
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/brissett-slider-1.jpg);
+  background-size: contain;
+  color: white;
+}
+.hero p,
+.hero h2{
+  font-family: var(--font-primary);
+  /* font-size: 40px; */
+  font-size: 2.5em;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: initial;
+}
+.hero p:first-child{
+  margin-bottom: 1em;
+}
+.hero .btn{
+  font-size: 18px;
+  margin-top: 0.5em;
+}
+.services .cards .top{
+  background: var(--color-primary);
+  color: var(--color-accent);
+  padding: 16px 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .cards .top h3{
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.services .cards .top img{
+  width: 40px;
+}
+.services .cards .text{
+  padding: 16px 24px;
+}
+.services .cards .text p{
+  padding-bottom: 1em;
 }

@@ -75,11 +75,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <style>
     .molengo-regular {
       font-family: "Molengo", sans-serif;
       font-weight: 400;
       font-style: normal;
+    }
+    .inter {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+      font-variation-settings:
+        "slnt" 0;
     }
   </style>
   <link rel="stylesheet" href="css/style.css">
@@ -189,46 +198,54 @@
     </div>
   </nav>
   <div class="hero">
-    <h1>Brissett & Associates, Inc.</h1>
     <h2>Feel confident that your money is working for you.</h2>
-    <a href="tel:2014888858">Call for Consultation</a>
+    <a class="btn" href="tel:2014888858">Call for Consultation</a>
   </div>
+  <h1>Brissett & Associates, Inc.</h1>
   <div class="services">
     <h2>Services</h2>
     <ul class="cards one">
       <li>
         <div class="top">
-          <img src="img/icon/iconmonstr-banknote-6.svg" alt="One Dollar icon">
           <h3>Individual</h3>
+          <img src="img/icon/iconmonstr-banknote-accent.svg" alt="One Dollar icon">
         </div>
-        <p>
-          The Brissett & Associates, Inc. methodology is to Achieve success while Operating on the Basics of Accounting (AOB) fundamentals. Following the AOB method, we work diligently to identify and implement the simplest solutions.
-        </p>
-        <a href="/services/individual/" class="btn">Individual Service</a>
+        <div class="text">
+          <p>
+            The Brissett & Associates, Inc. methodology is to Achieve success while Operating on the Basics of Accounting (AOB) fundamentals. Following the AOB method, we work diligently to identify and implement the simplest solutions.
+          </p>
+          <a href="/services/individual/" class="btn">Individual Service</a>
+        </div>
       </li>
       <li>
         <div class="top">
-          <img src="img/icon/iconmonstr-chart-5.svg" alt="Graph icon">
           <h3>Corporate</h3>
+          <img src="img/icon/iconmonstr-chart-accent.svg" alt="Graph icon">
         </div>
-        <p>We specialize in our clients transaction-based working environments. Based on a range of industry expertise, we strive to baseline our clients routine activities against their peers, and work to provide the highest ROI.</p>
-        <a href="/services/corporate/" class="btn">Corporate Services</a>
+        <div class="text">
+          <p>We specialize in our clients transaction-based working environments. Based on a range of industry expertise, we strive to baseline our clients routine activities against their peers, and work to provide the highest ROI.</p>
+          <a href="/services/corporate/" class="btn">Corporate Services</a>
+        </div>
       </li>
       <li>
         <div class="top">
-          <img src="img/icon/iconmonstr-building-4.svg" alt="Home icon">
           <h3>Estate</h3>
+          <img src="img/icon/iconmonstr-building-accent.svg" alt="Home icon">
         </div>
-        <p>Brissett & Associates, Inc. understands that the grieving process is challenging. We work as a trusted advisor to help an estate be evaluated and ultimately distributed to all appropriate beneficiaries.</p>
-        <a href="/services/estate/" class="btn">Estate Service</a>
+        <div class="text">
+          <p>Brissett & Associates, Inc. understands that the grieving process is challenging. We work as a trusted advisor to help an estate be evaluated and ultimately distributed to all appropriate beneficiaries.</p>
+          <a href="/services/estate/" class="btn">Estate Service</a>
+        </div>
       </li>
       <li>
         <div class="top">
-          <img src="img/icon/iconmonstr-product-7.svg" alt="Product icon">
           <h3>Entrepreneur</h3>
+          <img src="img/icon/iconmonstr-product-accent.svg" alt="Product icon">
         </div>
-        <p>Realized dreams are the results of conscious actions fueled by passion and a trusted support system. We specialize in the trusted support system. Our focus is always on the future success of our clients.</p>
-        <a href="/services/entrepreneur" class="btn">Entrepreneur Service</a>
+        <div class="text">
+          <p>Realized dreams are the results of conscious actions fueled by passion and a trusted support system. We specialize in the trusted support system. Our focus is always on the future success of our clients.</p>
+          <a href="/services/entrepreneur" class="btn">Entrepreneur Service</a>
+        </div>
       </li>
     </ul>
     <div class="hero quote">
