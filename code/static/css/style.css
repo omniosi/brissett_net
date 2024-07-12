@@ -131,8 +131,11 @@ h2{
 }
 .hero{
   background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/brissett-slider-1.jpg);
-  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
+  padding: 40px 16px;
 }
 .hero.quote{
   background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/parallax-home.jpg);
@@ -228,4 +231,36 @@ footer .legal{
 }
 footer .legal p:first-child{
   margin-bottom: 0.5em;
+}
+@media (min-width:768px) {
+  .container{
+    max-width: 1440px;
+  }
+  .hero h2{
+    font-size: 80px;
+    line-height: 1;
+    max-width: 13ch;
+  }
+  .resources .cards,
+  .services .cards{
+    display: flex;
+    flex-direction: row;
+  }
+  .hero.quote{
+  }
+  .hero.quote p{
+    font-size: 64px;
+    max-width: 24ch;
+  }
+  .hero p:first-child{
+    margin-bottom: 0.75em;
+  }
+  .resources .cards li{
+    display: flex;
+    flex: 1 0 30%;
+  }
+  .resources .cards li .img{
+    flex: 1 0 30%;
+  }
+
 }
