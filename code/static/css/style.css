@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 250ms ease-in-out;
 }
 a{
   color: inherit;
@@ -102,6 +103,19 @@ nav button.menu .line{
   height: 2px;
   background: black;
 }
+nav button.menu.open .line.two{
+  opacity: 0;  
+}
+nav button.menu.open .line.three,
+nav button.menu.open .line.one{
+  transform-origin: left;
+}
+nav button.menu.open .line.one{
+  transform: rotate(25deg);
+}
+nav button.menu.open .line.three{
+  transform: rotate(-25deg);
+}
 footer,
 nav .menu-slideout{
   background: var(--color-primary);
@@ -114,12 +128,16 @@ nav .menu-slideout{
   z-index: 1;
   overflow: scroll;
   height: 0;
+  min-width: 320px;
+}
+nav .menu-slideout .connect .title{
+  padding: 16px 16px 0;
+}
+nav .menu-slideout .connect .social{
+  padding-top: 0;
 }
 nav .menu-slideout.open{
-  height: auto;
-}
-nav .menu-slideout ul:first-child{
-  margin-top: 6em;
+  height: 100vh;
 }
 h1{
   font-size: 16px;
@@ -227,6 +245,7 @@ footer .columns{
   display: flex;
   gap: 3em;
 }
+nav .menu-slideout .connect .title,
 footer .columns .title,
 footer .connect .title{
   font-size: 24px;
@@ -245,7 +264,7 @@ footer .legal{
 footer .legal p:first-child{
   margin-bottom: 0.5em;
 }
-@media (min-width:768px) {
+@media (min-width:1045px) {
   .container{
     max-width: 1440px;
   }
