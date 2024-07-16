@@ -184,7 +184,7 @@ h2{
 }
 .services .cards .top{
   background: var(--color-primary);
-  color: var(--color-accent);
+  color: white;
   padding: 16px 24px;
   position: relative;
   display: flex;
