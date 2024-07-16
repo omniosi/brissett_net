@@ -267,6 +267,7 @@ footer .legal p:first-child{
 @media (min-width:1045px) {
   .container{
     max-width: 1440px;
+    margin: auto;
   }
   .hero h2{
     font-size: 80px;
@@ -304,6 +305,8 @@ footer .legal p:first-child{
   footer .container{
     display: flex;
     justify-content: space-between;
+    /* gap: auto; */
+    width: 100%;
   }
   footer .columns{
     gap: 6em;
