@@ -46,6 +46,7 @@ ul{
 :root{
   --color-primary: #343D93;
   --color-accent: #23C8DF;
+  --color-selected: lightgray;
   --font-primary: Inter, ui-sans-serif, sans-serif;
   --font-secondary: Molengo, ui-sans-serif, sans-serif;
   font-size: 16px;
@@ -291,6 +292,14 @@ footer .legal p:first-child{
 .breadcrumb ul li:not(li:first-child):before{
   content: "/";
   padding-right: 0.25em;
+}
+.breadcrumb ul li{
+  color: var(--color-selected);
+  color: gray;
+  color: var(--color-primary);
+}
+.breadcrumb ul li a{
+  color: initial;
 }
 article{
   display: flex;
