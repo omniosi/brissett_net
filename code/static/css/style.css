@@ -48,6 +48,8 @@ ul{
   --color-accent: #23C8DF;
   --font-primary: Inter, ui-sans-serif, sans-serif;
   --font-secondary: Molengo, ui-sans-serif, sans-serif;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 body{
   font-family: var(--font-primary);
@@ -71,6 +73,8 @@ ul.social{
   flex-direction: row;
   gap: 1em;
 }
+.breadcrumb,
+.headline,
 .resources,
 .services,
 h1,
@@ -271,12 +275,13 @@ footer .legal p:first-child{
 .headline{
   background: var(--color-primary);
   color: white;
-  padding: 1em 1.5em;
 }
 .headline h1{
   font-family: "Inter", sans-serif;
   font-size: clamp(32px,2vw,48px);
+  font-size: clamp(2rem,2vw,3rem);
   font-weight: 900;
+  padding: 0;
 }
 .breadcrumb ul{
   display: flex;
