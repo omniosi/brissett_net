@@ -59,6 +59,10 @@ body{
 body > *{
   transition: all 1s ease-in-out;
 }
+.container{
+  max-width: 1440px;
+  margin: auto;
+}
 .logo{
   width: 160px;
 }
@@ -74,7 +78,7 @@ footer,
 .hero,
 nav .menu-slideout ul,
 nav button,
-nav{
+nav .container{
   padding: 16px;
 }
 footer .connect,
@@ -82,7 +86,7 @@ footer .columns,
 footer .text{
   padding: 16px 0;
 }
-nav{
+nav .container{
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -264,11 +268,34 @@ footer .legal{
 footer .legal p:first-child{
   margin-bottom: 0.5em;
 }
+.headline{
+  background: var(--color-primary);
+  color: white;
+  padding: 1em 1.5em;
+}
+.headline h1{
+  font-family: "Inter", sans-serif;
+  font-size: clamp(32px,2vw,48px);
+  font-weight: 900;
+}
+.breadcrumb ul{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.breadcrumb ul li:not(li:first-child):before{
+  content: "/";
+  padding-right: 0.25em;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+article p{
+  font-size: 20px;
+}
 @media (min-width:1045px) {
-  .container{
-    max-width: 1440px;
-    margin: auto;
-  }
   .hero h2{
     font-size: 80px;
     line-height: 1;
