@@ -74,6 +74,7 @@ ul.social{
   flex-direction: row;
   gap: 1em;
 }
+article,
 .breadcrumb,
 .headline,
 .resources,
@@ -91,14 +92,17 @@ footer .columns,
 footer .text{
   padding: 16px 0;
 }
+nav{
+  position: fixed;
+  background: white;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  
+}
 nav .container{
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: white;
-  z-index: 10;
 }
 nav button.menu{
   display: flex;
@@ -239,7 +243,7 @@ h2{
   align-items: start;
   gap: 1em;
 }
-footer{
+footer .container{
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -278,7 +282,6 @@ footer .legal p:first-child{
   color: white;
 }
 .headline h1{
-  font-family: "Inter", sans-serif;
   font-size: clamp(32px,2vw,48px);
   font-size: clamp(2rem,2vw,3rem);
   font-weight: 900;
@@ -308,6 +311,9 @@ article{
 }
 article p{
   font-size: 20px;
+}
+article h2{
+  margin-top: 1.5rem;
 }
 @media (min-width:1045px) {
   .hero h2{
@@ -344,10 +350,8 @@ article p{
     flex: 1 0 50%;
   }
   footer .container{
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    /* gap: auto; */
-    width: 100%;
   }
   footer .columns{
     gap: 6em;
