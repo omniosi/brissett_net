@@ -98,7 +98,6 @@ nav{
   z-index: 10;
   width: 100%;
   top: 0;
-  
 }
 nav .container{
   display: flex;
@@ -304,7 +303,7 @@ footer .legal p:first-child{
 .breadcrumb ul li a{
   color: initial;
 }
-article{
+article .container{
   display: flex;
   flex-direction: column;
   gap: 1em;
