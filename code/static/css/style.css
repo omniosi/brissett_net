@@ -1,4 +1,4 @@
-*,*:before,*:after{
+a*,*:before,*:after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,8 +25,7 @@ a.btn{
   display: inline-block;
 }
 a:hover.btn{
-  /* background: var(--color-accent); */
-  background: lightgray;
+  background: var(--color-bkg);
 }
 button{
   background-color: white;
@@ -42,11 +41,13 @@ ul{
   display: flex;
   flex-direction: column;
   gap: 1em;
+  padding: 0;
 }
 :root{
   --color-primary: #343D93;
   --color-accent: #23C8DF;
   --color-selected: lightgray;
+  --color-bkg: #E1E2EF;
   --font-primary: Inter, ui-sans-serif, sans-serif;
   --font-secondary: Molengo, ui-sans-serif, sans-serif;
   font-size: 16px;
@@ -74,6 +75,7 @@ ul.social{
   flex-direction: row;
   gap: 1em;
 }
+.promo,
 article,
 .breadcrumb,
 .headline,
@@ -314,6 +316,26 @@ article p{
 article h2{
   margin-top: 1.5rem;
 }
+.cards li{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+.promo{
+  background: var(--color-bkg);
+  color: var(--color-primary);
+  padding: 2em 1em;
+}
+.promo h2{
+  margin: 0 0 12px 0;
+}
+.initial{
+  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
+  font-size: 3em;
+  font-weight: 400;
+}
 @media (min-width:1045px) {
   .hero h2{
     font-size: 80px;
@@ -355,5 +377,11 @@ article h2{
   footer .columns{
     gap: 6em;
   }
-
+  article .cards.columns{
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 300px;
+    flex: 0 1 18.75rem;
+    gap: 10vw;
+  }
 }
