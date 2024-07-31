@@ -45,6 +45,9 @@ ul{
   gap: 1em;
   padding: 0;
 }
+ul.list{
+  list-style: initial;
+}
 :root{
   --color-primary: #343D93;
   --color-accent: #23C8DF;
