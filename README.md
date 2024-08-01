@@ -1,0 +1,1 @@
+BRIEF: Brissett.net no longer renders correctly. Code inspection shows that something in this WordPress codebase is broken. Client does not have access to the source code as it is on a developers server. This site needs to be rebuilt and hosted on a server the client has access to.
