@@ -415,4 +415,7 @@ article h2{
     flex: 0 1 18.75rem;
     gap: 10vw;
   }
+  .cards.two li{
+    flex-direction: row;
+  }
 }
