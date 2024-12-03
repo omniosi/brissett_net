@@ -94,6 +94,9 @@ ul.social{
   flex-direction: row;
   gap: 1em;
 }
+ul.social li img{
+  width: 32px;
+}
 .promo,
 article,
 .breadcrumb,
@@ -200,7 +203,7 @@ p{
   margin-top: 6em;
 }
 .hero{
-  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/brissett-hero-small-business-couple.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/brissett-hero-small-business-couple-smaller.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -208,8 +211,7 @@ p{
   padding: 40px 16px;
 }
 .hero.quote{
-  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/parallax-home.jpg);
-  /* background-image: url(../img/parallax-home.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/parallax-home-smaller.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -307,7 +309,7 @@ footer .columns .title{
   margin-bottom: 0.65em;
 }
 footer .legal{
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
   margin-top: 1em;
 }
@@ -368,6 +370,9 @@ article h2{
   font-weight: 400;
 }
 @media (min-width:1045px) {
+  .hero{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/brissett-hero-small-business-couple.jpg);
+  }
   .hero h2{
     font-size: 80px;
     line-height: 1;
@@ -386,7 +391,9 @@ article h2{
     align-items: start;
     gap: 1em;
   }
-  
+  .hero.quote{
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(../img/parallax-home.jpg);
+  }
   .hero.quote p{
     font-size: 64px;
     max-width: 24ch;
