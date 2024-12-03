@@ -341,9 +341,9 @@ footer .legal p:first-child{
 .breadcrumb ul li a{
   color: initial;
 }
-article p{
+/* article p{
   font-size: 20px;
-}
+} */
 article h2{
   margin-top: 1.5rem;
 }
